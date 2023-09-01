@@ -2,11 +2,10 @@
   display: flex;
   gap: 5px;
   .description {
-    flex: 1;
+    width: 50%;
   }
   .conditions {
-    flex: 1;
-    display: flex;
+    width: 50%;
   }
 }
 
@@ -16,6 +15,10 @@
 
     .conditions {
       display: block;
+      width: auto;
+    }
+    .description {
+      width: auto;
     }
   }
 }
