@@ -1,0 +1,18 @@
+<form
+  [formGroup]="form"
+  class="flex mr-5 ml-5 mb-5 p-float-label mt-1 align-items-center"
+>
+  <p-inputNumber
+    inputId="integeronly"
+    [formControlName]="controlName"
+    class="flex-grow-1"
+  >
+  </p-inputNumber>
+  <label htmlFor="number-input" class="ml-3">{{ label }}</label>
+
+  <div
+  pTooltip="this is required"
+  class="pi pi-info rounded "
+  tooltipPosition="left"
+></div>
+</form>

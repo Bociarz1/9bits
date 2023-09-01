@@ -1,0 +1,6 @@
+<div #container class="container" [style]="setContainerStyles()" (mouseenter)="onMouseEnter(container)" (mouseleave)="onMouseOut(container)">
+  <div  class='circle' [style]="setCircleStyles()"
+  >{{index+1}}</div>
+  <div class="text">{{header | uppercase}} </div>
+  <span *ngIf="index + 1 === stepNum"class="step-info">{{header | uppercase}}</span>
+</div>

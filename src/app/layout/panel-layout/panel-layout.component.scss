@@ -1,0 +1,18 @@
+.container {
+  --first-color: #9F0927;
+  --first-color-hover: #821228;
+  --second-color: #262626;
+
+
+}
+
+::ng-deep .p-button {
+  background-color: var(--first-color);
+  border: var(--first-color);
+}
+
+::ng-deep .p-button:hover {
+  background-color: var(--first-color-hover) !important;
+  border: var(--first-color-hover);
+
+}

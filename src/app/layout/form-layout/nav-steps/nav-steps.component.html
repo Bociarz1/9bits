@@ -1,0 +1,1 @@
+<app-step *ngFor="let header of headers; let i = index" [header]="header" [index]="i" (click)="emitEvent(i+1);sendForm(i+1)" [stepNum]="stepNum"></app-step>

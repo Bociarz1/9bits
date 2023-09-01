@@ -1,0 +1,9 @@
+::ng-deep .p-button.p-button-text:enabled:hover {
+  color: #fff;
+}
+
+::ng-deep .p-button.p-button-danger.p-button-text:enabled:hover,
+.p-buttonset.p-button-danger > .p-button.p-button-text:enabled:hover,
+.p-splitbutton.p-button-danger > .p-button.p-button-text:enabled:hover {
+  color: #fff;
+}

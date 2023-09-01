@@ -1,0 +1,20 @@
+<form [formGroup]="form">
+<div class="flex mr-5 ml-5 mb-5 align-items-center">
+    <div class="flex-grow-1 relative">
+      <p-dropdown
+        [options]="options"
+        [formControlName]="controlName"
+        optionLabel="name"
+        [placeholder]="placeholder"
+        class="flex"
+        
+      ></p-dropdown>
+      <div *ngIf="required" class="required-star">*</div>
+    </div>
+    <div
+    pTooltip="this is required"
+    class="pi pi-info rounded "
+    tooltipPosition="left"
+    ></div>
+</div>
+</form>

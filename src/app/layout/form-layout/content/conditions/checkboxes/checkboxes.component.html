@@ -1,0 +1,16 @@
+<form [formGroup]="form" class="flex flex-row justify-content-between mb-3 justify-content-center">
+  <div>
+    <p-checkbox
+      [inputId]="controlName"
+      [formControlName]="controlName"
+      [value]="name"
+      class="flex-grow-1 mr-2"
+    ></p-checkbox>
+    <label [for]="controlName">{{ name }}</label>
+  </div>
+  <div
+    pTooltip="this is required"
+    class="pi pi-info rounded "
+    tooltipPosition="left"
+  ></div>
+</form>

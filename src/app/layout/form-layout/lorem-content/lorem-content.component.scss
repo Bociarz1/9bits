@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  gap: 5px;
+  .element {
+    background-color: var(--form-box-bg);
+    
+      .header {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 10px;
+        font-size: 18px;
+      }
+    
+  }
+}
+
+@media (width < 1200px) {
+  .container {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="header">
+    <span class="text">Conditions</span>
+    <span class="required">*is required</span>
+  </div>
+  <app-divider></app-divider>
+  <div class="select-fields">
+    <app-drop-down placeholder="select" [form]="form" controlName="portal" [required]="true"></app-drop-down>
+    <app-drop-down placeholder="select" [form]="form" controlName="type" [required]="true"></app-drop-down>
+  </div>
+    <div class="text-field">
+      <app-number-input label="Benefit amout" [form]="form" controlName="benefits"></app-number-input>
+    </div>
+    <app-divider></app-divider>
+    <div class="date-fields flex mr-5 ml-5 mb-5 gap-5 align-items-center">
+      <app-date-input [form]="form" controlName="start_date" [required]="true"></app-date-input>
+      <app-date-input [form]="form" controlName="end_date" [required]="false"></app-date-input>
+      <div
+      pTooltip="this is required"
+      class="pi pi-info rounded "
+      tooltipPosition="left"
+    ></div>
+    </div>
+    <div class="radio-buttons" >
+      <app-radio-buttons [form]="form" controlName="radio_button"></app-radio-buttons>
+    </div>
+    <div class="checkboxes flex flex-column mr-5 ml-5 mb-5">
+      <app-checkboxes [form]="form" controlName="first_checkbox" name="Connect with other promotions" ></app-checkboxes>
+      <app-checkboxes [form]="form" controlName="second_checkbox" name="Back promotion"  ></app-checkboxes>
+    </div>
+</div>

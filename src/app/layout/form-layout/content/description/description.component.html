@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="header">
+    <span class="text">Desciption</span>
+    <span class="required">*is required</span>
+  </div>
+  <app-divider></app-divider>
+  <div class="text-fields">
+    <app-text-input label="Marketing name" [form]="form" controlName="marketing_name" [required]="true"></app-text-input>
+    <app-text-input label="Technical name" [form]="form" controlName="technical_name"></app-text-input>
+    <app-text-input-area label="Description" [form]="form" controlName="description"></app-text-input-area>
+  </div>
+
+  <div class="second-header">Catalog promotion tutorial:</div>
+  <app-divider></app-divider>
+  <div class="text" *ngFor="let lorem of [0,1,2]">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero tempore veritatis sequi unde iure, quis earum ea sed doloremque, aliquid corporis voluptatum soluta quasi aliquam repellendus ipsa enim? Corporis, quos.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero tempore veritatis sequi unde iure, quis earum ea sed doloremque, aliquid corporis voluptatum soluta quasi aliquam repellendus ipsa enim? Corporis, quos.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero tempore veritatis sequi unde iure, quis earum ea sed doloremque, aliquid corporis voluptatum soluta quasi aliquam repellendus ipsa enim? Corporis, quos.</p>
+  </div>
+</div>

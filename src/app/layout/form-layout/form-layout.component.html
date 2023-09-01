@@ -1,0 +1,12 @@
+<div class="container">
+  <app-nav-steps class="nav-steps" (eventEmitter)="handleChildEvent($event)" [submitFunc]="submitForm" [editFunc]="editForm" [form]="form"></app-nav-steps>
+  <div class="content">
+    <div class="padding-box"></div>
+  <form [formGroup]="form">
+      <app-content *ngIf="stepNum === 1 || stepNum === 9; else elseBlock" [form]="form" ></app-content>
+    <ng-template #elseBlock>
+      <app-lorem-content [stepNumber]="stepNum"></app-lorem-content>
+    </ng-template>
+  </form>
+</div>
+</div>

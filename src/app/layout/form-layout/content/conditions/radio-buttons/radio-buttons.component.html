@@ -1,0 +1,18 @@
+<form [formGroup]="form">
+<div class="card flex justify-content-center mb-2 mr-5 ml-5">
+    <div *ngFor="let category of categories" class="field-checkbox flex-grow-1">
+      <p-radioButton
+        [inputId]="category.key"
+        [value]="category.name"
+        [formControlName]="controlName"
+        [(ngModel)]="selectedCategory"
+      ></p-radioButton>
+      <label [for]="category.key" class="ml-2">{{ category.name }}</label>
+    </div>
+    <div
+    pTooltip="this is required"
+    class="pi pi-info rounded "
+    tooltipPosition="left"
+  ></div>
+  </div>
+</form>

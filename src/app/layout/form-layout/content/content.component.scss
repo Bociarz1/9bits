@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  gap: 5px;
+  .description {
+    flex: 1;
+  }
+  .conditions {
+    flex: 1;
+    display: flex;
+  }
+}
+
+@media (width < 1200px) {
+  .container {
+    flex-direction: column;
+
+    .conditions {
+      display: block;
+    }
+  }
+}

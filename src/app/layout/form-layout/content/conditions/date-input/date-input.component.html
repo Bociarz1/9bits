@@ -1,0 +1,12 @@
+<form [formGroup]="form">
+<div class="card flex justify-content-center ">
+    <span class="flex align-items-center relative">
+      <p-calendar
+        [showIcon]="true"
+        [formControlName]="controlName"
+        [(ngModel)]="date"
+      ></p-calendar>
+      <div *ngIf="required" class="required-star">*</div>
+    </span>
+  </div>
+</form>

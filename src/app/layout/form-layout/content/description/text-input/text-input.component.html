@@ -1,0 +1,19 @@
+<form [formGroup]="form" class="flex justify-content-end mr-5 ml-5 mb-5 align-items-center">
+  <div class="flex-grow-1">
+    <span class="p-float-label">
+      <input
+        pInputText
+        [id]="controlName"
+        [formControlName]="controlName"
+        class="w-full"
+      />
+      <div *ngIf="required" class="required-star">*</div>
+      <label [htmlFor]="controlName">{{ label }}</label>
+    </span>
+  </div>
+  <div
+  pTooltip="this is required"
+  class="pi pi-info rounded "
+  tooltipPosition="left"
+></div>
+</form>

@@ -1,0 +1,19 @@
+<div class="card">
+  <form [formGroup]="form" class="p-float-label flex align-items-center mr-5 ml-5 mb-5">
+    <span class="p-float-label"></span>
+    <textarea
+      id="float-input"
+      rows="5"
+      cols="30"
+      pInputTextarea
+      [formControlName]="controlName"
+      class="flex-grow-1"
+    ></textarea>
+    <label for="float-input">{{ label }}</label>
+    <div
+    pTooltip="this is required"
+    class="pi pi-info rounded align-self-start"
+    tooltipPosition="left"
+  ></div>
+  </form>
+</div>
